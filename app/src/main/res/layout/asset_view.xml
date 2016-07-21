@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <Button
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        android:id="@+id/button_Return" />
+
+    <EditText
+        android:layout_width="372dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_Name"
+        android:layout_below="@+id/button_Pause"
+        android:layout_alignRight="@+id/button_Pause"
+        android:layout_alignEnd="@+id/button_Pause"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="AndroidIO.txt" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Open"
+        android:id="@+id/button_Open"
+        android:layout_above="@+id/editText_Asset"
+        android:layout_alignRight="@+id/button_Stop"
+        android:layout_alignEnd="@+id/button_Stop" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_Asset"
+        android:layout_alignRight="@+id/button_Stop"
+        android:layout_alignEnd="@+id/button_Stop"
+        android:layout_toRightOf="@+id/listView_Floder"
+        android:layout_toEndOf="@+id/listView_Floder"
+        android:layout_alignBottom="@+id/listView_Floder"
+        android:layout_below="@+id/button_Pause"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.74" />
+
+</LinearLayout>

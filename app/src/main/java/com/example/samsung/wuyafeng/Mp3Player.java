@@ -26,7 +26,7 @@ public class Mp3Player {
     void initMp3Player(final AppCompatActivity appCompatActivity, Button bStart, Button bPause, Button bStop){
         mediaPlayer = new MediaPlayer();
         try{
-            mediaPlayer.setDataSource("/sdcard/glsl.mp3");
+            mediaPlayer.setDataSource("/mnt/shell/emulated/0/goldfallen.mp3");
             mediaPlayer.prepare();
         }
         catch (Exception e){
